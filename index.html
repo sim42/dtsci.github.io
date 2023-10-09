@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="DeepThought Science is dedicated to the simulation of our beautiful world through advanced scientific computing">
+    <meta name="keywords" content="DeepThought,DivineThought,Sim42,神思科学">
+    <title>神思科学 DeepThought Science</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="3Dmol/3Dmol-min.js" async></script>
+</head>
+<body>
+    <div class="container" style="display:flex; flex-wrap:wrap">
+        <div style="flex:1">
+            <a href="https://dtsci.cn/">
+            <img style="position:relative; padding-top:30px" src="images/Logo-large.png" width="60%"  alt="DeepThought Science" onload="if(this.width<240) this.width=240;if(this.width>450) this.width=450">
+            </a>
+	    <h2 style="padding-left:20px;text-align:left" class="gradient_font">Dedicated to the simulation of our beautiful world through advanced scientific computing</h2>
+        </div>
+        <div title="🔆 Drag to Rotate 🔆" id="3Dmol" style="width:400px; height:300px; margin: auto;" class='viewer_3Dmoljs' data-href='Data/molecule.xyz' data-type='xyz'  data-backgroundalpha=0 data-style='stick'>
+        </div>
+    </div>
+	<script>setInterval(function() {if (typeof($3Dmol)!= "undefined" && typeof($3Dmol.viewers["3Dmol"]) != "undefined") {$3Dmol.viewers["3Dmol"].rotate(-0.3)}}, 15)</script>
+</body>
+</html>
